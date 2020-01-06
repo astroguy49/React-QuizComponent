@@ -22,7 +22,7 @@ class Quiz extends Component {
         return (
             <div>
                 {isQuizEnd ? <QuizEnd /> : 
-                    <QuizQuestion class="QuizQuestion" quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]} 
+                    <QuizQuestion className="QuizQuestion" quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]} 
                                   showNextQuestionHandler={this.showNextQuestion.bind(this)} /> }
             </div>
         )
